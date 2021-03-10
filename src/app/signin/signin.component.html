@@ -1,0 +1,10 @@
+<h1>GoogleOAuth</h1>
+<div *ngIf="user">
+  <img src="{{ user.photoUrl }}">
+  <h4>{{ user.name }}</h4>
+  <p>{{ user.email }}</p>
+</div>
+
+<div>
+    <button (click)="signInWithGoogle()">SignInWithGoogle</button>
+</div>
